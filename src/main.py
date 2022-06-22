@@ -52,8 +52,8 @@ async def on_message(message):
             if(response['success']):
                 await message.reply(response["message"])
             else:
-                # await message.reply("Probably not!!")
-                await message.reply(response["message"])
+                await message.reply("Probably not!!")
+                # await message.reply(response["message"])
         except Exception:
             print(traceback.format_exc())
             await message.add_reaction("❌")
